@@ -22,8 +22,7 @@ export const useMount = (callback: () => void) => {
   }, []);
 };
 
-// TODO 后面用范型来规范类型
-export const useDebounce = (value: unknown, delay?: number): any => {
+export const useDebounce = <T>(value: T, delay?: number) => {
   const [debounceValue, setDebounceValue] = useState(value);
 
   useEffect(() => {
