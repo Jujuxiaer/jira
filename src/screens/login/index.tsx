@@ -22,7 +22,8 @@ export const LoginScreen = () => {
             if (response.ok) {
             }
         });
-    }
+    };
+
     return <form onSubmit={handleSubmit}>
         <div>
             <label htmlFor="username">用户名</label>
